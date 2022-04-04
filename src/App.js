@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Form from './Form'
 import './App.css'
+import Update from './Update'
 
 function App() {
   const [users, setUsers] = useState([])
@@ -32,6 +33,7 @@ function App() {
       <h1>Random Users</h1>
       <Form userId={1} />
       <br />
+      <Update id={1} />
       <br />
       {hasError ? <p>{errorMessage}</p> : null}
       {!isLoading ? (
